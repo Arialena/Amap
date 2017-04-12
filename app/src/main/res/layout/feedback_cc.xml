@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="意见反馈"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:text="请留下您宝贵的意见或建议"
+        android:gravity="center|left"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/edit_idea"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:gravity="top"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_backgroud"/>
+    </LinearLayout>
+
+</LinearLayout>

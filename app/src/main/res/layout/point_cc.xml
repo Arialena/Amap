@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="积分管理"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="积分数 : "
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="20"
+            android:textColor="@color/black"
+            android:gravity="center|left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:background="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="积分特权 : "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:id="@+id/privilege"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="一般特权"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="积分兑换 : "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:id="@+id/pointChange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="商品兑换"
+            android:textColor="@color/black"
+            android:gravity="center|left"/>
+    </LinearLayout>
+</LinearLayout>

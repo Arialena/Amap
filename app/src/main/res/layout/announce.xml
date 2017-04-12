@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/annoynce_backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="我要发布"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/custom_shape"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#020202"
+            android:text="求助"
+            android:layout_weight="1.5"
+            />
+        <EditText
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|left"
+            android:hint="求助内容"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/custom_shape"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:textColor="#020202"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="具体详情"
+            android:layout_weight="1.5"
+            />
+        <EditText
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:hint="请具体描述您的求助信息以便得到更好帮助"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/custom_shape"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#020202"
+            android:text="服务费"
+            android:layout_weight="1.5"
+            />
+
+        <EditText
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="请输入支付报酬"
+            android:layout_weight="5"
+            android:id="@+id/editText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/custom_shape"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="0dp"
+            android:textColor="#020202"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:text="联系电话"
+            android:layout_weight="1.5"
+            />
+        <EditText
+            android:background="@null"
+            android:layout_width="0dp"
+            android:inputType="phone"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:hint="请输入您的联系电话"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="确认无误，赶快发布"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

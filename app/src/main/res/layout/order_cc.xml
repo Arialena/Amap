@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="订单详情"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/myOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:background="@color/white"
+        android:text="我下的单"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/theSingle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:background="@color/gray"
+        android:text="我接的单"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="个人中心"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/iTunes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:background="@color/white"
+            android:text="账号管理"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/lineItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:background="@color/gray"
+            android:text="订单详情"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/pos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:background="@color/white"
+            android:text="积分管理"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:background="@color/gray"
+            android:text="设置"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

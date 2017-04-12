@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/custom_shape">
+            <Button
+                android:id="@+id/customChange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnheight"
+                android:text="切换账号"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/yans"/>
+            <Button
+                android:id="@+id/customExit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnheight"
+                android:text="退出登录"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/yans"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/customCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/custom_shape"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>

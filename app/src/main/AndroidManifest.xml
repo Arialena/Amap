@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.amp">
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取缓存数据-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于提高GPS定位速度-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="02ba7a1bc91995bd02e0308610d16201"></meta-data>
+
+        <activity
+            android:name=".AmapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <activity android:name=".Announce_Activity"/>
+
+        <activity android:name=".setting_personal.PersonCenter"/>
+        <activity android:name=".setting_personal.Setting"/>
+        <activity android:name=".setting_personal.Point"/>
+        <activity android:name=".setting_personal.Accounts"/>
+        <activity android:name=".setting_personal.Order"/>
+        <activity android:name=".setting_personal.Feedback"/>
+
+        <!--登陆，注册，免责页面-->
+        <activity android:name=".register_login.LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible|stateHidden"/>
+        <activity android:name=".register_login.RegisterActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize|stateHidden" />
+        <activity android:name=".register_login.ForgetActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize|stateHidden" />
+        <activity android:name=".register_login.DisclaimerActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize|stateHidden" />
+    </application>
+
+
+
+</manifest>

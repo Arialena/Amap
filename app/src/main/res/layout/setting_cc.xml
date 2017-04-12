@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolBarcolor"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/medLift"
+            android:text="设 置"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alerts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="消息通知"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="清除缓存"/>
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:gravity="center"
+        android:background="@color/gray"
+        android:text="意见反馈"/>
+
+    <Button
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="关于我们"/>
+
+</LinearLayout>
